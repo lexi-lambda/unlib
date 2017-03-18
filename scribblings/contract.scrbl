@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "contract"]{Contract utilities}
 
-@(define-eval contract-eval scheme/contract (planet untyped/unlib/contract))
+@(define-eval contract-eval scheme/contract unlib/contract)
 
-@defmodule[(planet untyped/unlib/contract)]{
+@defmodule[unlib/contract]{
 
 Utilities for use with the PLT contract library.
                                                                                     

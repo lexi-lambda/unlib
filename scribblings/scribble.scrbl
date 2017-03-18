@@ -1,11 +1,11 @@
 #lang scribble/doc
 
-@(require "base.ss"
+@(require "base.rkt"
           (for-label scribble/eval))
 
 @title[#:tag "scribble"]{Scribble utilities}
 
-@defmodule[(planet untyped/unlib/scribble)]{
+@defmodule[unlib/scribble]{
 
 Useful Scribble utilities.
 

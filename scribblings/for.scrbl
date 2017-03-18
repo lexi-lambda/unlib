@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "for"]{@scheme[for] variants}
 
-@(define-eval for-eval (planet untyped/unlib/for))
+@(define-eval for-eval unlib/for)
 
-@defmodule[(planet untyped/unlib/for)]{
+@defmodule[unlib/for]{
 
 @defform[(for/fold/reverse ([accum-id accum-expr] ...) ([sequence-id sequence-expr] ...) expr ...)]{
 Like @scheme[for/fold], but calls @scheme[reverse] on each @scheme[accum-id] after iteration is complete.

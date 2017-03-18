@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "parameter"]{Parameter utilities}
 
-@(define-eval param-eval (planet untyped/unlib/number) (planet untyped/unlib/parameter))
+@(define-eval param-eval unlib/number unlib/parameter)
 
-@defmodule[(planet untyped/unlib/parameter)]{
+@defmodule[unlib/parameter]{
 
 Convenience forms for working with parameters.
 

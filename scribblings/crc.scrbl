@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "crc"]{CRC checksums}
 
-@(define-eval crc-eval (planet untyped/unlib/crc))
+@(define-eval crc-eval unlib/crc)
 
-@defmodule[(planet untyped/unlib/crc)]{
+@defmodule[unlib/crc]{
 
 @defproc[(crc32 [data bytes?]) natural?]{
 

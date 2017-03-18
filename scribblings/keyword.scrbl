@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "keyword"]{Keyword utilities}
 
-@(define-eval keyword-eval (planet untyped/unlib/keyword))
+@(define-eval keyword-eval unlib/keyword)
 
-@defmodule[(planet untyped/unlib/keyword)]{
+@defmodule[unlib/keyword]{
 
 Utilities for use with keywords and keyword procedures.
 

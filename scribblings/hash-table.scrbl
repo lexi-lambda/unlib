@@ -1,10 +1,10 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "hash-table"]{PLT 3x hash utilities}
 
-@defmodule[(planet untyped/unlib/hash-table)]{
+@defmodule[unlib/hash-table]{
 
 Useful hash utilities. These procedures are compatible with the PLT 3 / @scheme[mzscheme] language procedure names for hashes.
 

@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "log"]{Logging utilities}
 
-@(define-eval log-eval (planet untyped/unlib/log))
+@(define-eval log-eval unlib/log)
 
-@defmodule[(planet untyped/unlib/log)]{
+@defmodule[unlib/log]{
                                        
 This module adds some useful features to the core logging functionality of PLT Scheme:
      

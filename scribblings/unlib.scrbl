@@ -1,6 +1,6 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title{@bold{Unlib:} Helpful Utilities from Untyped}
 
@@ -20,12 +20,12 @@ Unlib 3.x contains some legacy code that will be removed in Unlib 4.x. In most c
 
 @itemize{
   @item{support for the @scheme[mzscheme] language will be dropped;}
-  @item{the @filepath{enum.ss} module has been replaced with @scheme{enumeration.ss} and will be removed;}
-  @item{the @filepath{hash-table.ss} module has been replaced with @filepath{hash.ss} and will be removed;}
-  @item{the @filepath{cache-mzscheme.ss} module has been replaced with @filepath{cache.ss} and will be removed;}
-  @item{the @filepath{string-mzscheme.ss} module has been replaced with @filepath{string.ss} and will be removed;}
-  @item{the @filepath{time-mzscheme.ss} module has been replaced with @filepath{time.ss} and will be removed;}
-  @item{the @filepath{enum.ss} module has been replaced with @filepath{enumeration.ss} and will be removed;}
+  @item{the @filepath{enum.rkt} module has been replaced with @scheme{enumeration.rkt} and will be removed;}
+  @item{the @filepath{hash-table.rkt} module has been replaced with @filepath{hash.rkt} and will be removed;}
+  @item{the @filepath{cache-mzscheme.rkt} module has been replaced with @filepath{cache.rkt} and will be removed;}
+  @item{the @filepath{string-mzscheme.rkt} module has been replaced with @filepath{string.rkt} and will be removed;}
+  @item{the @filepath{time-mzscheme.rkt} module has been replaced with @filepath{time.rkt} and will be removed;}
+  @item{the @filepath{enum.rkt} module has been replaced with @filepath{enumeration.rkt} and will be removed;}
   @item{@scheme[define-debug] has been replaced with @scheme[define/debug] and will be removed;}
   @item{@scheme[define-values-debug] has been replaced with @scheme[define-values/debug] and will be removed;}
   @item{@scheme[let-debug] has been replaced with @scheme[let/debug] and will be removed;}
@@ -42,7 +42,6 @@ Unlib 3.x contains some legacy code that will be removed in Unlib 4.x. In most c
 @include-section{cache.scrbl}
 @include-section{contract.scrbl}
 @include-section{crc.scrbl}
-@include-section{date.scrbl}
 @include-section{debug.scrbl}
 @include-section{enum.scrbl}
 @include-section{enumeration.scrbl}
@@ -66,11 +65,9 @@ Unlib 3.x contains some legacy code that will be removed in Unlib 4.x. In most c
 @include-section{string.scrbl}
 @include-section{symbol.scrbl}
 @include-section{syntax.scrbl}
-@include-section{time.scrbl}
 @include-section{url.scrbl}
 @include-section{yield.scrbl}
 
 @section{Acknowledgements}
 
 Many thanks to the following for their contributions: Ryan Culpepper, Eric Hanchrow, and Jay McCarthy.
-

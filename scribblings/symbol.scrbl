@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "symbol"]{Symbol utilities}
 
-@(define-eval symbol-eval (planet untyped/unlib/symbol))
+@(define-eval symbol-eval unlib/symbol)
 
-@defmodule[(planet untyped/unlib/symbol)]{
+@defmodule[unlib/symbol]{
 
 Useful symbol utilities.
 

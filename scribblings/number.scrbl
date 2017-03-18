@@ -1,10 +1,10 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "number"]{Number utilities}
 
-@defmodule[(planet untyped/unlib/number)]{
+@defmodule[unlib/number]{
 
 Useful number utilities.
 

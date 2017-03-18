@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "gen"]{Generators (short names)}
 
-@defmodule[(planet untyped/unlib/gen)]{
+@defmodule[unlib/gen]{
 
-This module re-provides the procedures from @filepath{generator.ss} with shorter, more convenient names. See @secref{generator} for more detailed documentation.
+This module re-provides the procedures from @filepath{generator.rkt} with shorter, more convenient names. See @secref{generator} for more detailed documentation.
 
 @defthing[g:end symbol?]{
 

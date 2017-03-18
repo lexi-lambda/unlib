@@ -1,14 +1,14 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "debug"]{Debugging tools}
 
 @(define-eval debug-eval 
    scheme/pretty
-   (planet untyped/unlib/debug))
+   unlib/debug)
 
-@defmodule[(planet untyped/unlib/debug)]{
+@defmodule[unlib/debug]{
 
 Utilities for printing the runtime values of variables for debugging purposes, with minimal disruption to code structure.
 

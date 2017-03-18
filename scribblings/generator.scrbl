@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "generator"]{Generators}
 
-@(define-eval gen-eval (planet untyped/unlib/generator))
+@(define-eval gen-eval unlib/generator)
 
-@defmodule[(planet untyped/unlib/generator)]{
+@defmodule[unlib/generator]{
 
 There is no doubt that lists are useful structures for representing many kinds of data, and that @scheme[fold]@schemeidfont{s} and @scheme[map]@schemeidfont{s} are a quick, convenient way of performing arbitrary bits of list manipulation.
 
@@ -23,7 +23,7 @@ This module provides convenient ways of:
   @item{combining generators to form other generators (c.f. @scheme[fold], @scheme[map] and so on);}
   @item{accumulating results from generators (e.g. back into lists).}}
 
-Many of the procedures defined in this module have rather unwieldy names. @filepath{gen.ss} exports versions of these procedures with shorter names: see @secref{gen} for more information.
+Many of the procedures defined in this module have rather unwieldy names. @filepath{gen.rkt} exports versions of these procedures with shorter names: see @secref{gen} for more information.
 
 @defthing[generator-end symbol?]{
 

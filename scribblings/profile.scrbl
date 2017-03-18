@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "profile"]{Profiling tools}
 
-@(define-eval profile-eval srfi/1 (planet untyped/unlib/profile))
+@(define-eval profile-eval srfi/1 unlib/profile)
 
-@defmodule[(planet untyped/unlib/profile)]{
+@defmodule[unlib/profile]{
 
 Simple profiling tools.
 

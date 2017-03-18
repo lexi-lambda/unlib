@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "list"]{List utilities}
 
-@(define-eval list-eval (planet untyped/unlib/list))
+@(define-eval list-eval unlib/list)
 
-@defmodule[(planet untyped/unlib/list)]{
+@defmodule[unlib/list]{
 
 Utilities for lists.} @;{end defmodule}
 

@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "syntax"]{Syntax utilities}
 
-@(define-eval syntax-eval (planet untyped/unlib/syntax))
+@(define-eval syntax-eval unlib/syntax)
 
-@defmodule[(planet untyped/unlib/syntax)]{
+@defmodule[unlib/syntax]{
 Utilities for creating macros and working with syntax.
 
 @defproc[(symbolic-identifier=? [stx1 syntax?] [stx2 syntax?]) boolean?]{
@@ -20,7 +20,7 @@ Creates an identifier by appending @scheme[arg]@schemeidfont{s}. Equivalent to:
 where @scheme[arg->string] converts an argument to a string.}
 
 @defproc[(syntax-location-string [stx syntax?]) string?]{
-Returns a string describing the source location of @scheme[stx] (for example @scheme["myfile.ss:123:45"]).}
+Returns a string describing the source location of @scheme[stx] (for example @scheme["myfile.rkt:123:45"]).}
 
 @defform/subs[(begin-for-syntax/any-order definition ...)
               ([definition (define (id arg ...) expr ...)

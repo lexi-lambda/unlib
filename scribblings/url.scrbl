@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
-@(define-eval url-eval net/url (planet untyped/unlib/url))
+@(define-eval url-eval net/url unlib/url)
 
 @title[#:tag "url"]{URL utilities}
 
-@defmodule[(planet untyped/unlib/url)]{
+@defmodule[unlib/url]{
 
 Useful URL utilities.
 

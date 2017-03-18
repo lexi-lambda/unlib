@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "enumeration"]{Enumerations (revised)}
 
-@(define-eval enum-eval (planet untyped/unlib/enumeration))
+@(define-eval enum-eval unlib/enumeration)
 
-@defmodule[(planet untyped/unlib/enumeration)]{
+@defmodule[unlib/enumeration]{
 
 Utilities for defining simple enumerations of booleans, symbols and integers. These are useful wherever you would normally use a small collection of literals to represent possible values of a variable, and test for value equality with @scheme[eq?]. The @scheme[define-enum] form binds the literals to Scheme identifiers so the compiler catches typos that might otherwise take a long time to debug.
 

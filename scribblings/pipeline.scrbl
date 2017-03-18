@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "pipeline"]{Pipelines}
 
-@(define-eval pipeline-eval (planet untyped/unlib/pipeline))
+@(define-eval pipeline-eval unlib/pipeline)
 
-@defmodule[(planet untyped/unlib/pipeline)]{
+@defmodule[unlib/pipeline]{
 
 @italic{Pipelines} allow a programmer to wrap procedure calls in one or more pieces of useful functionality. Pipelines are lists of procedures, called @italic{stages}, each of which performs some function and calls the next stage. The last stage calls the target procedure.
 

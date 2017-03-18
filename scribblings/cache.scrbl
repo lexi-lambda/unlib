@@ -1,10 +1,10 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "cache"]{Write-through cache}
 
-@defmodule[(planet untyped/unlib/cache)]{
+@defmodule[unlib/cache]{
 
 A @italic{write-through cache} is essentially a hash table that calls user supplied functions to load and store data from a @italic{back-end store} (a database, file, network resource or other). This is useful for, for example, caching database values so that writes are always sent to the database (so it is always up-to-date) but data is only loaded as needed.
 

@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "string"]{String utilities}
 
-@(define-eval string-eval (planet untyped/unlib/string))
+@(define-eval string-eval unlib/string)
 
-@defmodule[(planet untyped/unlib/string)]{
+@defmodule[unlib/string]{
 
 Useful string utilities. Compatible with PLT 4 languages.
 

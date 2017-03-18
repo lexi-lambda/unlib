@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "match"]{Match utilities}
 
-@(define-eval match-eval scheme/match (planet untyped/unlib/match))
+@(define-eval match-eval scheme/match unlib/match)
 
-@defmodule[(planet untyped/unlib/match)]{
+@defmodule[unlib/match]{
 
 Additional patterns for use in @scheme[scheme/match] expressions like @scheme[match] and @scheme[match-lambda].
 

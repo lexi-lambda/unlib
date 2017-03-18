@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "exn"]{Exception utilities}
 
-@(define-eval exn-eval (planet untyped/unlib/exn))
+@(define-eval exn-eval unlib/exn)
 
-@defmodule[(planet untyped/unlib/exn)]{
+@defmodule[unlib/exn]{
 
 Utilities for raising and handling exceptions.
 

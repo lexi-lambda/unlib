@@ -1,10 +1,10 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "bytes"]{Bytes utilities}
 
-@defmodule[(planet untyped/unlib/bytes)]{
+@defmodule[unlib/bytes]{
 
 Useful bytes utilities.
 

@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "file"]{File and path utilities}
 
-@(define-eval file-eval (planet untyped/unlib/file))
+@(define-eval file-eval unlib/file)
 
-@defmodule[(planet untyped/unlib/file)]{
+@defmodule[unlib/file]{
 
 Utilities for manipulating files and paths.
 

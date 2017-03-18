@@ -1,12 +1,12 @@
 #lang scribble/doc
 
-@(require "base.ss")
+@(require "base.rkt")
 
 @title[#:tag "yield"]{Yieldable procedures}
 
-@(define-eval yield-eval (planet untyped/unlib/yield))
+@(define-eval yield-eval unlib/yield)
 
-@defmodule[(planet untyped/unlib/yield)]{
+@defmodule[unlib/yield]{
 
 Implements the "yield" operator of Ruby / Python using continuations. The "yield" command pauses the execution of a procedure and returns a result. Execution continues from the same point in the next invocation of the procedure (rather from the beginning of the procedure as usual).
 
